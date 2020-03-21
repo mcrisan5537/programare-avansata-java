@@ -1,0 +1,25 @@
+java -jar lab5.jar 
+CatalogShell> load catalog.txt
+CatalogShell> list
+
+Document #1
+id=java1
+name=Java course1
+location=https://profs.info.uaic.ro/~acf/java/slides/en/intro_slide_en.pdf
+locationIsFile=false
+Tags=1
+Type=Slides
+
+Document #2
+id=text1
+name=fisier text
+location=./test.txt
+locationIsFile=true
+Tags=2
+Type=Text
+Content=ASCII text
+
+CatalogShell> view text1
+CatalogShell> view java1
+CatalogShell> report html
+CatalogShell> exit
