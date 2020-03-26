@@ -1,3 +1,5 @@
+# SHELL INTERACTION
+
 java -jar lab5bonus.jar 
 CatalogShell> load catalog.txt
 CatalogShell> list
