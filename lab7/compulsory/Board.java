@@ -7,16 +7,12 @@ public class Board {
 
     private List<Token> tokens = Collections.synchronizedList(new ArrayList<>());
 
-    public Board(int n, int m) {
-        // generate random board of size n
-        // with tokens from 0 to m, where 0 is a blank token
+    public Board(int boardSize, int tokenMaxValue) {
+        // generate random board of size boardSize
+        // with tokens from 0 to tokenMaxValue, where 0 is a blank token
         Random random = new Random();
-        for(int i = 0; i < n; i++)
-            tokens.add(new Token(random.nextInt(m)));
-    }
-
-    public Board(List<Token> tokens) {
-        this.tokens = tokens;
+        for(int i = 0; i < boardSize; i++)
+            tokens.add(new Token(random.nextInt(tokenMaxValue)));
     }
 
     public synchronized int getSize() {
@@ -33,7 +29,8 @@ public class Board {
     }
 
     @Override
-    public String toString() {
+    public synchronized String toString() {
         return tokens.toString();
     }
+
 }

@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class Token {
 
     private int value;
@@ -17,12 +15,9 @@ public class Token {
         return value;
     }
 
-    public void setValue(int value) {
-        this.value = value;
-    }
-
     @Override
     public String toString() {
         return String.valueOf(value);
     }
+
 }
