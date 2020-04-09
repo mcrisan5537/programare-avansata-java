@@ -1,0 +1,1 @@
+# Am incercat sa fac ceva, uitati-va la video-ul "VIDEO-INTERACTION.MOV"
