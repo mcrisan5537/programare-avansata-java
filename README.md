@@ -45,3 +45,5 @@ GRUPA: E2
 [compulsory](https://github.com/mcrisan5537/programare-avansata-java/tree/master/lab9/compulsory)
 
 [optional](https://github.com/mcrisan5537/programare-avansata-java/tree/master/lab9/optional)
+
+[bonus](https://github.com/mcrisan5537/programare-avansata-java/tree/master/lab9/bonus)
