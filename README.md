@@ -40,6 +40,6 @@ GRUPA: E2
 [optional](https://github.com/mcrisan5537/programare-avansata-java/tree/master/lab8/optional)
 
 
-## LAB 8
+## LAB 9
 
 [compulsory](https://github.com/mcrisan5537/programare-avansata-java/tree/master/lab9/compulsory)
