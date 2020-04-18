@@ -39,6 +39,8 @@ GRUPA: E2
 
 [optional](https://github.com/mcrisan5537/programare-avansata-java/tree/master/lab8/optional)
 
+[bonus](https://github.com/mcrisan5537/programare-avansata-java/tree/master/lab8/bonus)
+
 
 ## LAB 9
 
