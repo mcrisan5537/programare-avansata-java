@@ -7,7 +7,7 @@ AN: 2
 
 GRUPA: E2
 
-## LAB 4
+## LAB 3
 [bonus](https://github.com/mcrisan5537/programare-avansata-java/tree/master/lab3/bonus)
 
 
