@@ -1,0 +1,85 @@
+openapi: 3.0.3
+
+info:
+  title: gomoku-api
+  description: access gomoku game related data
+  version: "4.0.0"
+  
+servers:
+  - url: http://localhost:8080
+    description: non-secure (HTTP)
+  - url: https://localhost:443
+    description: secure (HTTPS)
+    
+components:
+  schemas:
+    User:
+      properties:
+        id:
+          type: integer
+          example: 3
+        name:
+          type: string
+          example: "John"
+
+paths:
+  /players:
+    summary: Players collection.
+    
+    get:
+      responses:
+        "200":
+          description: OK. Successfully returned list of players.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        "404":
+          description: Not found. No registered players.
+          
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/User"
+      responses:
+        "201":
+          description: Created. Successfully created player.
+        "400":
+          description: Bad request. Player not created.
+      
+  /players/{id}:
+    summary: Access specific player.
+    parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      
+    put:
+      description: Change the name of the player with specified ID.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/User"
+      responses:
+        "200":
+          description: OK. Successfully changed player name.
+        "400":
+          description: Bad request. Player information not changed.
+        "404":
+          description: Not found. Player with specified ID doesn't exist.
+          
+    delete:
+      description: Delete the player with the specified ID.
+      responses:
+        "204":
+          description: No content. Player successfully deleted.
+        "400":
+          description: Bad request. Player information not changed.
+        "404":
+          description: Not found. Player with specified ID doesn't exist.
