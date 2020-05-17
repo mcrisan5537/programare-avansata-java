@@ -1,0 +1,1 @@
+# Am facut un filmulet "VIDEO-INTERACTION.mov" care demonstreaza functionalitatea programului.
