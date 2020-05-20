@@ -75,3 +75,8 @@ GRUPA: E2
 
 [compulsory](https://github.com/mcrisan5537/programare-avansata-java/tree/master/lab12/compulsory)
 
+[optional](https://github.com/mcrisan5537/programare-avansata-java/tree/master/lab12/optional)
+
+## LAB 13
+
+[compulsory](https://github.com/mcrisan5537/programare-avansata-java/tree/master/lab13/compulsory)
